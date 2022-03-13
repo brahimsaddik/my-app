@@ -11,13 +11,15 @@ import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.SequenceGenerator;
-import lombok.Getter;
-import lombok.Setter;
+
+import lombok.*;
 
 
 @Entity
 @Getter
-@Setter
+@Setter@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
 
     @Id
